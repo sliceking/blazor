@@ -1,0 +1,30 @@
+@page "/extra"
+@inject HttpClient httpClient
+@inject IDispatcher dispatcher
+
+@code {
+  public string? rand { get; set; } 
+  public async Task doThing(){
+      var apiUrl = "https://www.random.org/strings/?num=1&len=10&digits=on&upperalpha=on&loweralpha=on&unique=on&format=plain&rnd=new";
+      var response = await httpClient.GetAsync(apiUrl);
+
+      if (!response.IsSuccessStatusCode) 
+      {
+          dispatcher.Dispatch(new SnackbarShowErrorAction($"error getting rando number"));
+          return;
+      }
+
+      rand = await response.Content.ReadAsStringAsync();
+
+    }
+}
+<PageTitle>Extra</PageTitle>
+
+<MudText Typo="Typo.h4" GutterBottom="true">
+    <MudIcon Icon="@Icons.Material.Filled.List" @onclick="doThing"/>Extra
+</MudText>
+
+<MudText Class="mb-6">some things to remember when doing things:  
+  <input @bind="rand" @bind:after="doThing"/>
+</MudText>
+

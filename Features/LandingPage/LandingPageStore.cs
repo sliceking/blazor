@@ -24,12 +24,8 @@ public class LandingPageFeature : Feature<LandingPageState>
                     ImageUrl = "images/activitylog.jpg",
                     Links = new ItemLink[]
                     {
-                        new ItemLink
-                        {
-                            Text = "Activity Log",
-                            Url = "/activityLog"
-                        }
-                    }
+                        new ItemLink { Text = "Activity Log", Url = "/activityLog" },
+                    },
                 },
                 new LandingPageItem
                 {
@@ -38,12 +34,8 @@ public class LandingPageFeature : Feature<LandingPageState>
                     ImageUrl = "images/stickies.jpg",
                     Links = new ItemLink[]
                     {
-                        new ItemLink
-                        {
-                            Text = "Task List",
-                            Url = "/tasklist"
-                        }
-                    }
+                        new ItemLink { Text = "Task List", Url = "/tasklist" },
+                    },
                 },
                 new LandingPageItem
                 {
@@ -52,12 +44,8 @@ public class LandingPageFeature : Feature<LandingPageState>
                     ImageUrl = "images/snippets.jpg",
                     Links = new ItemLink[]
                     {
-                        new ItemLink
-                        {
-                            Text = "Code Snippets",
-                            Url = "/snippets"
-                        }
-                    }
+                        new ItemLink { Text = "Code Snippets", Url = "/snippets" },
+                    },
                 },
                 new LandingPageItem
                 {
@@ -66,12 +54,8 @@ public class LandingPageFeature : Feature<LandingPageState>
                     ImageUrl = "images/links.jpg",
                     Links = new ItemLink[]
                     {
-                        new ItemLink
-                        {
-                            Text = "Link Library",
-                            Url = "/links"
-                        }
-                    }
+                        new ItemLink { Text = "Link Library", Url = "/links" },
+                    },
                 },
                 new LandingPageItem
                 {
@@ -80,12 +64,8 @@ public class LandingPageFeature : Feature<LandingPageState>
                     ImageUrl = "images/countdown_timer.jpg",
                     Links = new ItemLink[]
                     {
-                        new ItemLink
-                        {
-                            Text = "Pomodoro",
-                            Url = "/pomodoro"
-                        }
-                    }
+                        new ItemLink { Text = "Pomodoro", Url = "/pomodoro" },
+                    },
                 },
                 new LandingPageItem
                 {
@@ -94,17 +74,9 @@ public class LandingPageFeature : Feature<LandingPageState>
                     ImageUrl = "images/organize.jpg",
                     Links = new ItemLink[]
                     {
-                        new ItemLink
-                        {
-                            Text = "Categories",
-                            Url = "/categories"
-                        },
-                        new ItemLink
-                        {
-                            Text = "Projects",
-                            Url = "/projects"
-                        }
-                    }
+                        new ItemLink { Text = "Categories", Url = "/categories" },
+                        new ItemLink { Text = "Projects", Url = "/projects" },
+                    },
                 },
                 new LandingPageItem
                 {
@@ -113,12 +85,8 @@ public class LandingPageFeature : Feature<LandingPageState>
                     ImageUrl = "images/sky_clouds.jpg",
                     Links = new ItemLink[]
                     {
-                        new ItemLink
-                        {
-                            Text = "Weather",
-                            Url = "/weather"
-                        }
-                    }
+                        new ItemLink { Text = "Weather", Url = "/weather" },
+                    },
                 },
                 new LandingPageItem
                 {
@@ -127,14 +95,21 @@ public class LandingPageFeature : Feature<LandingPageState>
                     ImageUrl = "images/database.jpg",
                     Links = new ItemLink[]
                     {
-                        new ItemLink
-                        {
-                            Text = "Database",
-                            Url = "/database"
-                        }
-                    }
-                }
-            }
+                        new ItemLink { Text = "Database", Url = "/database" },
+                    },
+                },
+                new LandingPageItem
+                {
+                    HeaderText = "extra",
+                    BodyText = "some extra things im adding",
+                    ImageUrl = "images/sky_clouds.jpg",
+                    Links = new ItemLink[]
+                    {
+                        new ItemLink { Text = "extra", Url = "/extra" },
+                    },
+                },
+            },
         };
     }
 }
+
